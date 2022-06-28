@@ -52,9 +52,9 @@ const person = {
 // person.role[1] = 10;
 
 // person.role = [10, "admin", "user"];
-
-// let favoriteActivites: string[];
 let favoriteActivites: any[];
+//  let favoriteActivites: string[];
+
 favoriteActivites = ["Sports", 1];
 console.log(person.name);
 
