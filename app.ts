@@ -1,7 +1,18 @@
+// per te shkurtuar codin
+type Combinable = number | string;
+type ConversionDiscriptor = "as-number" | "as-text";
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultConversation: string
+  input1: Combinable,
+  input2: Combinable,
+  // resultConversation: Combinable
+  resultConversation: ConversionDiscriptor
+
+  // function combine(
+  //   input1: number | string,
+  //   input2: number | string,
+  //   // resultConversation: string
+  //   resultConversation: "as-number" | "as.text"
 ) {
   let result;
   if (
