@@ -9,3 +9,11 @@ userInput = "Lace";
 if (typeof userInput === "string") {
   userName = userInput; // kemi errorr sepse vlera eshe e pa njohur , nqs e bej,e unknown any ateher iken errori
 }
+//never
+function generateError(message: string, code: number): never {
+  throw {
+    message: message,
+    errorCode: code,
+  };
+}
+generateError("An error occourred", 500);

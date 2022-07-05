@@ -1,19 +1,16 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput; // me  // any
+var userName;
+userInput = 5;
+userInput = "Lace";
+// bejme nje qoffte sepse
+if (typeof userInput === "string") {
+    userName = userInput; // kemi errorr sepse vlera eshe e pa njohur , nqs e bej,e unknown any ateher iken errori
 }
-function printResult(num) {
-    //undefined
-    console.log("Result: " + num);
+//never
+function generateError(message, code) {
+    throw {
+        message: message,
+        errorCode: code
+    };
 }
-printResult(add(5, 17));
-console.log(printResult(add(5, 17))); // undefined
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-var combineValue;
-combineValue = add;
-console.log(combineValue(4, 6));
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
+generateError("An error occourred", 500);
